@@ -2,6 +2,7 @@ import { ChevronDown, Menu } from "lucide-react";
 import Button from "../components/Button";
 
 import MobileNav from "../components/MobileNav";
+import clsx from "clsx";
 
 const navItems = [
   "Individuals",
@@ -14,7 +15,11 @@ const navItems = [
 const Navbar = () => {
   return (
     <>
-      <nav className=" flex items-center bg-p flex-row justify-between px-7 py-3 max-w-screen-xl mx-auto ">
+      <nav
+        className={clsx(
+          " flex items-center bg-p flex-row justify-between px-7 py-3 max-w-screen-xl mx-auto"
+        )}
+      >
         <img src="/logo.svg" alt="calendly" className="w-[160px] mr-3" />
         <div className="hidden lg:flex gap-x-5 lg:gap-x-9 font-medium">
           {navItems.map((item, index) =>

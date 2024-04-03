@@ -3,7 +3,7 @@ import { ChevronRight, Target } from "lucide-react";
 const Card = ({ card }) => {
   const { icon, title, desc } = card;
   return (
-    <div className="border-gray-200 border w-96 h-[380px] rounded-xl shadow-lg hover:shadow-xl p-5">
+    <div className="border-gray-200 border w-96  rounded-xl shadow-md hover:shadow-xl p-5">
       <div className="flex gap-2 flex-col">
         {icon}
         <h2 className="font-semibold text-xl">{title}</h2>

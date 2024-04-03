@@ -12,7 +12,7 @@ const MobileNav = ({ navItems }) => {
   };
 
   return (
-    <div className="lg:hidden z-10  ">
+    <div className="lg:hidden z-30    ">
       <button
         onClick={handleClick}
         class="navbar-burger flex justify-end items-end p-3 text-blue-600"
@@ -29,16 +29,15 @@ const MobileNav = ({ navItems }) => {
           </svg>
         )}
       </button>
-
       {toggle && (
         <>
-          <div className="absolute  top-20 left-0 right-0  w-full z-20 bg-white ">
+          <div className="fixed  h-full overflow-hidden top-20 left-0 right-0  w-full z-20 bg-white ">
             <div className=" flex px-5 py-2 items-center text-xl gap-y-5 flex-col mt-10 ">
               {navItems.map((item, index) => (
                 <a
                   href="#"
                   key={index}
-                  className="border-[1px] cursor-pointer border-black rounded-lg  flex items-center justify-center h-10 w-full hover:bg-gray-100"
+                  className=" cursor-pointer border-black rounded-lg  flex items-center justify-center h-10 w-full hover:bg-gray-100"
                 >
                   {item}
                 </a>
