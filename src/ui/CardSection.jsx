@@ -1,4 +1,4 @@
-import Cards from "../components/Cards";
+import Cards from "../components/cards/Cards";
 import { Solution } from "../components/Solution";
 
 const CardSection = () => {

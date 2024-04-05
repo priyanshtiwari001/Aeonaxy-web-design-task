@@ -6,7 +6,7 @@ import {
   Twitter,
   Youtube,
 } from "lucide-react";
-import FooterItems from "../components/FooterItems";
+import FooterItems from "../components/footer/FooterItems";
 
 const Footer = () => {
   return (
